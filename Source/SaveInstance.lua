@@ -83,7 +83,7 @@ function getLocalProperties(instance)
 end
 
 local success = pcall(function()
-	rawApi = game:GetService('HttpService'):GetAsync(apiUrl)
+	rawApi = game:HttpGet(apiUrl)
 end)
 
 if not success then
